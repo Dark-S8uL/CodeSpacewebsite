@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #ff6600;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Event Sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.featured-event, .upcoming-events, .past-events {
+    text-align: center;
+}
+
+/* Event Cards */
+.event-card {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* Maximum width for large screens */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.event-card h3 {
+    color: #ff6600;
+}
+
+.event-card button {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.event-card button:hover {
+    background-color: #cc5200;
+}
+
+/* Event Images */
+.event-image {
+    width: 100%;
+    height: auto; /* Ensures the aspect ratio is maintained */
+    max-height: 200px; /* Limit image height to 200px */
+    object-fit: cover; /* Ensures image fills the available space without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-card {
+        width: 90%; /* Slightly larger cards for smaller screens */
+    }
+
+    .event-image {
+        height: auto; /* Let images scale as per screen size */
+        max-height: 150px;
+    }
+}
