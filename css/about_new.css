@@ -1,0 +1,106 @@
+/* Basic styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Header styling */
+.page-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Darker background for header */
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ff8800; /* Orange color for heading */
+}
+
+
+
+/* Alternating layout for content sections */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background for sections */
+}
+
+/* Default layout: text on left, image on right */
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-container strong {
+    font-size: 22px;
+    color: #ff8800; /* Orange color for headings */
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%; /* Ensures the container doesn't exceed the viewport */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 50%; /* Reduces the width of images to 50% of their container */
+    border: 5px solid #ff8800; /* Orange border around the images */
+}
+
+/* Alternate the image and text positions */
+.content-section:nth-child(odd) .text-container {
+    order: 1;
+}
+
+.content-section:nth-child(odd) .image-container {
+    order: 2;
+}
+
+.content-section:nth-child(even) .text-container {
+    order: 2;
+}
+
+.content-section:nth-child(even) .image-container {
+    order: 1;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+    .image-container, .text-container {
+        order: unset; /* No alternating order on mobile */
+        text-align: center;
+    }
+    .image-container img {
+        width: 80%; /* Adjust width on mobile for better fit */
+    }
+}
+
+/* Additional styling for better readability */
+body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.content-section p {
+    margin: 10px 0;
+    font-size: 18px;
+}
