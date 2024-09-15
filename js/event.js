@@ -1,74 +1,26 @@
 const events = [
     {
         id: 1,
-        title: "Event 1",
-        date: "2022-01-01",
+        title: "Yoga Day",
+        date: "21/06/2024",
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event1.jpeg",
+        image: "/images/event-page/yoga_day1.jpg",
         type: "past"
     },
     {
         id: 2,
-        title: "Event 2",
-        date: "2022-01-15",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?t",
-        image: "/images/event-page/event2.jpeg",
+        title: "Finxthon Hackathon",
+        date: "29/11/2023",
+        description: "Finxthon Hackathon tend to have a specific focus, which can include the programming language used, the operating system, an application, an API, or the subject and the demographic group of the programmers. There is no restriction on the type of software or hardware being created. The Club provides the students with a platform to solve some of the pressing problems we face in our daily lives, and thus inculcate a culture of product innovation and a mindset of problem-solving.",
+        image: "/images/event-page/finxthon.webp",
         type: "past"
     },
     {
         id: 3,
-        title: "Event 3",
-        date: "2022-02-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event3.jpeg",
-        type: "upcoming"
-    },
-    {
-        id: 4,
-        title: "Event 4",
-        date: "2022-03-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?t",
-        image: "/images/event-page/event4.jpeg",
-        type: "upcoming"
-    },
-    {
-        id: 5,
-        title: "Event 5",
-        date: "2022-01-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event5.jpeg",
-        type: "past"
-    },
-    {
-        id: 6,
-        title: "Event 6",
-        date: "2022-01-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event6.jpeg",
-        type: "past"
-    },
-    {
-        id: 7,
-        title: "Event 7",
-        date: "2022-01-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event7.jpeg",
-        type: "past"
-    },
-    {
-        id: 8,
-        title: "Event 8",
-        date: "2022-01-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event8.jpeg",
-        type: "past"
-    },
-    {
-        id: 9,
-        title: "Event 9",
-        date: "2022-01-01",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit sit placeat ab obcaecati ducimus velit! Minus culpa corrupti ducimus reiciendis provident sit doloribus corporis?",
-        image: "/images/event-page/event1.jpeg",
+        title: "Exclusive Interactive Session with Sandeep Jain (GFG Founder)",
+        date: "11/11/2022",
+        description: "The two signs of intelligence are knowledge with imagination, to know what you know, and knowing what you don't is true knowledge.💛\n We CodeSpace community organized our first Offline session by the founder and CEO of GeeksforGeeks, Mr. Sandeep Jain.",
+        image: "/images/event-page/gfg.jpg",
         type: "past"
     },
 ];
