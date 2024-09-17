@@ -3,63 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Event Page</title>
-    <link rel="stylesheet" href="css/events.css">
+    <title>Events</title>
+
+    <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+   <link rel="stylesheet" href="/css/style.css">
+  <link href="/css/event-style.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>Event Page</h1>
-    </header>
-
-    <section class="featured-event">
-        <h2>Featured Event</h2>
-        <div class="event-card">
-            <img src="images/devfest.png" alt="Featured Event" class="event-image">
-            <h3>Join DevFest 2024</h3>
-            <p>A global event hosted by Google Developer Groups around the world.</p>
-            <button>Learn More</button>
+    <div class="hero_area">
+        <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                <img src="images/about-img.png" height="50px" alt=""> Event Page
+              </span>
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="events.html">Events <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-    </section>
+      </header>
+      <!-- end header section -->
+    
+        <!-- Events Section start -->
+        <main>
+            <section id="upcoming-events">
+                <center><h1>Upcoming Events</h1></center>
+                <br>
+                <div class="event-grid">
+                    <!-- Upcoming event cards will be generated here -->
+                </div>
+            </section>
 
-    <section class="upcoming-events">
-        <h2>Upcoming Events</h2>
-        <div class="event-list">
-            <div class="event-card">
-                <img src="images/Google Workspace Developer Summit.png" alt="Upcoming Event" class="event-image">
-                <h3>Google Workspace Developer Summit</h3>
-                <p>Boston, Berlin - September 2024</p>
-                <button>Register</button>
-            </div>
-            <div class="event-card">
-                <img src="images/Tech Equity Collective Innovate.png" alt="Upcoming Event" class="event-image">
-                <h3>Tech Equity Collective Innovate</h3>
-                <p>Applications are now open!</p>
-                <button>Apply Now</button>
-            </div>
-        </div>
-    </section>
+            <section id="past-events">
+                <center><h1>Past Events</h1></center>
+                <br>
+                <div class="event-grid">
+                    <!-- Past event cards will be generated here -->
+                </div>
+            </section>
+        </main>
+        <!-- Events Section end -->
 
-    <section class="past-events">
-        <h2>Past Events</h2>
-        <div class="event-list">
-            <div class="event-card">
-                <img src="images/Google IO 2023.png" alt="Past Event" class="event-image">
-                <h3>Google I/O 2023</h3>
-                <p>San Francisco, May 2023</p>
-                <button>Watch Replay</button>
-            </div>
-            <div class="event-card">
-                <img src="images/AI Conference 2022.jpeg" alt="Past Event" class="event-image">
-                <h3>AI Conference 2022</h3>
-                <p>New York, October 2022</p>
-                <button>Read Summary</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Designed by CodeSpace Club</p>
-    </footer>
+        <script src="/js/event.js"></script>
+      </div>
 </body>
 </html>
