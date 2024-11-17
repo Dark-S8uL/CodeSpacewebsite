@@ -113,8 +113,25 @@ function generateEventCards(events, container) {
 }
 
 // Generate past event cards
+// const pastEventsContainer = document.getElementById("past-events").querySelector(".event-grid");
+// generateEventCards(events.filter((event) => event.type === "past"), pastEventsContainer);
+
+// Function to parse date strings into Date objects
+function parseDate(dateString) {
+    return new Date(dateString);
+}
+
+// Function to sort events by date
+function sortEventsByDate(events) {
+    return events.sort((a, b) => parseDate(a.date) - parseDate(b.date));
+}
+
+// Generate past event cards
 const pastEventsContainer = document.getElementById("past-events").querySelector(".event-grid");
-generateEventCards(events.filter((event) => event.type === "past"), pastEventsContainer);
+const pastEvents = events.filter((event) => event.type === "past");
+const sortedPastEvents = sortEventsByDate(pastEvents);
+generateEventCards(sortedPastEvents, pastEventsContainer);
+
 
 // Generate upcoming event cards
 // const upcomingEventsContainer = document.getElementById("upcoming-events").querySelector(".event-grid");
