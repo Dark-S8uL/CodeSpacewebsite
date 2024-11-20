@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    background-color: #ff6600;
+    background-color: #f27a05;
     padding: 15px 0;
     font-size: 24px;
     font-weight: bold;
@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-    color: #ff6600;
+    color: #f27a05;
     margin-bottom: 10px;
 }
 
@@ -113,7 +113,7 @@ p {
 input, textarea {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ff6600;
+    border: 1px solid #f27a05;
     border-radius: 5px;
     background-color: black;
     color: white;
@@ -124,7 +124,7 @@ textarea {
 }
 
 .submit-btn {
-    background-color: #ff6600;
+    background-color: #f27a05;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -138,7 +138,7 @@ textarea {
 }
 
 .footer {
-    background-color: #ff6600;
+    background-color: #f27a05;
     padding: 20px 0;
     margin-top: 50px;
 }
@@ -166,7 +166,7 @@ textarea {
 }
 
 a {
-    color: #ff6600;
+    color: #f27a05;
     text-decoration: none;
 }
 
